@@ -1,0 +1,23 @@
+<html>
+<head>
+	<title>Format Rupiah Dengan Javascript</title>
+	<style type="text/css">
+	body {
+		font: 17px "open sans", "segoe ui", tahoma;
+		text-align: center;
+	}
+	</style>
+	<script type="text/javascript">
+		var bilangan = 23456789;
+		
+		var	reverse_number = bilangan.toString().split('').reverse().join(''),
+			ribuan 	= reverse_number.match(/\d{1,3}/gi);
+			ribuan	= ribuan.join('.').split('').reverse().join('');
+			
+		document.write(ribuan);
+	</script>
+</head>
+<body>
+</body>
+</html>
+
